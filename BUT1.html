@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site CV</title>
+    <!-- LOGO AP-->
+    <link rel="icon" type="image/x-icon" href="/assets/AP.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "SAERobot SAEFlipper";
+        }
+
+        .SAEFlipper {
+            grid-area: SAEFlipper;
+        }
+
+        .SAERobot {
+            grid-area: SAERobot;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Mon CV - Pichot</h1>
+    </header>
+
+    <div class="container">
+        <!-- Menu de navigation latérale -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="BUT1.html" class="active">BUT1</a></li>
+                <li><a href="BUT2.html">BUT2</a></li>
+                <li><a href="BUT3.html">BUT3</a></li>
+                <li><a href="experience.html">Expériences</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Contenu principal -->
+        <section class="main-content">
+            <div class="grid-container">
+                <div class="SAEFlipper">
+                    <h1> SAEFlipper </h1>
+                    <iframe src="/assets/BUT1/Choisir lui poster pichot.pdf" width="600" height="600"></iframe>
+                    <br><span>
+                        The goal of this project is to control
+                        a brushless motor connected to a bicycle wheel
+                        in order to regulate the speed.
+                    </span>
+                    <iframe src="/assets/BUT1/code_grp_37_matrice_sons_lcd.pdf" width="600" height="600"></iframe>
+                    <iframe src="/assets/BUT1/crouset_grp_37.pdf" width="600" height="600"></iframe>
+                    <iframe src="/assets/BUT1/flipper-37.pdf" width="600" height="600"></iframe>
+                </div>
+                <div class="SAERobot">
+                    <h1> SAERobot </h1>
+
+                    <iframe src="/assets/BUT1/Rapport De Projet ROBOT_S2.pdf" width="600" height="600"></iframe>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Copyright © Your Website 2024</p>
+            <p>Distributed By <a href="#">Alexandre Pichot</a></p>
+        </div>
+
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
