@@ -8,31 +8,15 @@
     <!-- LOGO AP-->
     <link rel="icon" type="image/x-icon" href="/assets/Index/AP.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                "SAERobot SAEFlipper";
-        }
-
-        .SAEFlipper {
-            grid-area: SAEFlipper;
-        }
-
-        .SAERobot {
-            grid-area: SAERobot;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Mon CV - Pichot</h1>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="/SiteWebPichot/assets/Index/AP_blk.png" alt="Logo AP" class="site-logo">
+        </div>
+        <h1 class="site-title">Portfolio/CV Alexandre Pichot</h1>
     </header>
 
     <div class="container">
@@ -44,7 +28,7 @@
                 <li><a href="BUT1.html" class="active">BUT1</a></li>
                 <li><a href="BUT2.html">BUT2</a></li>
                 <li><a href="BUT3.html">BUT3</a></li>
-                <li><a href="experience.html">Expériences</a></li>
+                <li><a href="Experience.html">Expériences</a></li>
                 <li><a href="Contact.html">Contact</a></li>
 
             </ul>
@@ -52,24 +36,25 @@
 
         <!-- Contenu principal -->
         <section class="main-content">
-            <div class="grid-container">
+            <div class="grid-container2">
                 <div class="SAEFlipper">
                     <h1> SAEFlipper </h1>
-                    <iframe src="/assets/BUT1/Choisir lui poster pichot.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT1/Choisir lui poster pichot.pdf" width="600" height="600"></iframe>
                     <br><span>
                         The goal of this project is to control
                         a brushless motor connected to a bicycle wheel
                         in order to regulate the speed.
                     </span>
-                    <iframe src="/assets/BUT1/code_grp_37_matrice_sons_lcd.pdf" width="600" height="600"></iframe>
-                    <iframe src="/assets/BUT1/crouset_grp_37.pdf" width="600" height="600"></iframe>
-                    <iframe src="/assets/BUT1/flipper-37.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT1/code_grp_37_matrice_sons_lcd.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT1/crouset_grp_37.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT1/flipper-37.pdf" width="600" height="600"></iframe>
                 </div>
                 <div class="SAERobot">
                     <h1> SAERobot </h1>
 
-                    <iframe src="/assets/BUT1/Rapport De Projet ROBOT_S2.pdf" width="600" height="600"></iframe>
-
+                    <iframe src="/SiteWebPichot/assets/BUT1/Rapport De Projet ROBOT_S2.pdf" width="600" height="600"></iframe>
+                    <img src="/SiteWebPichot/assets/BUT1/IMG_0119.JPG" alt="Image de SAE"
+                    title="Ceci est une image d'un projet SAE réalisé en BUT1. (à Cachan)" width=80% height=20%> <!-- 15 -->
                 </div>
             </div>
         </section>
@@ -94,7 +79,5 @@
             <a href="#">Terms of Use</a>
         </div>
     </footer>
-
 </body>
-
 </html>

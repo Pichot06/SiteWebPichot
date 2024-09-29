@@ -8,41 +8,15 @@
     <!-- LOGO AP-->
     <link rel="icon" type="image/x-icon" href="/assets/Index/AP.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 1fr 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-                "SAESon SAELora"
-                "SAEFour SAERoue";
-        }
-
-        .SAESon {
-            grid-area: SAESon;
-        }
-
-        .SAELora {
-            grid-area: SAELora;
-        }
-
-        .SAEFour {
-            grid-area: SAEFour;
-        }
-
-        .SAERoue {
-            grid-area: SAERoue;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Mon CV - Pichot</h1>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="/SiteWebPichot/assets/Index/AP_blk.png" alt="Logo AP" class="site-logo">
+        </div>
+        <h1 class="site-title">Portfolio/CV Alexandre Pichot</h1>
     </header>
 
     <div class="container">
@@ -54,7 +28,7 @@
                 <li><a href="BUT1.html">BUT1</a></li>
                 <li><a href="BUT2.html" class="active">BUT2</a></li>
                 <li><a href="BUT3.html">BUT3</a></li>
-                <li><a href="experience.html">Expériences</a></li>
+                <li><a href="Experience.html">Expériences</a></li>
                 <li><a href="Contact.html">Contact</a></li>
 
             </ul>
@@ -66,38 +40,38 @@
                 <div class="SAESon">
                     <h1>SAE Son</h1>
                     <video id="videoRobot" class="video-frame" width="310" height="390" controls muted>
-                        <source src="/assets/BUT2/SAESon/SAE SON.mp4" type="video/mp4">
+                        <source src="/SiteWebPichot/assets/BUT2/SAESon/SAE SON.mp4" type="video/mp4">
                     </video>
-                    <iframe src="/assets/BUT2/SAESon/Rapport_SAE_SON_Pichot.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAESon/Rapport_SAE_SON_Pichot.pdf" width="600" height="600"></iframe>
                     <br>
                     <span>
                         Projet de faire un amplificateur de classe D
                     </span>
-                    <iframe src="/assets/BUT2/SAESon/Soutenance S4 SAE Son.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAESon/Soutenance S4 SAE Son.pdf" width="600" height="600"></iframe>
                     </video>
                 </div>
                 <div class="SAELora">
                     <h1>SAE Lora</h1>
                     <br>
                     <br>
-                    <iframe src="/assets/BUT2/SAELora/lora.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAELora/lora.pdf" width="600" height="600"></iframe>
 
                 </div>
                 <div class="SAEFour">
                     <h1>SAE Four</h1>
                     <br>
                     <br>
-                    <iframe src="/assets/BUT2/SAEFour/sceance 1 pichot augier.pdf" width="600" height="600"></iframe>
-                    <iframe src="/assets/BUT2/SAEFour/seance 2 pichot augier.pdf" width="600" height="600"></iframe>
-                    <iframe src="/assets/BUT2/SAEFour/Séance 3_Pichot_Augier.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAEFour/sceance 1 pichot augier.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAEFour/seance 2 pichot augier.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAEFour/Séance 3_Pichot_Augier.pdf" width="600" height="600"></iframe>
                 </div>
                 <div class="SAERoue">
 
                     <h1>SAE Roue</h1>
                     <br>
                     <br>
-                    <iframe src="/assets/BUT2/SAERoue/LIVRABLE 1 PICHOT.pdf" width="600" height="600"></iframe>
-                    <iframe src="/assets/BUT2/SAERoue/Pichot_livrable2.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAERoue/LIVRABLE 1 PICHOT.pdf" width="600" height="600"></iframe>
+                    <iframe src="/SiteWebPichot/assets/BUT2/SAERoue/Pichot_livrable2.pdf" width="600" height="600"></iframe>
 
 
                 </div>
@@ -125,5 +99,4 @@
     </footer>
 
 </body>
-
 </html>

@@ -8,49 +8,15 @@
     <!-- LOGO AP-->
     <link rel="icon" type="image/x-icon" href="/assets/Index/AP.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <style>
-        .download-btn-container {
-            text-align: center;
-        }
-
-        .download-btn {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #007bff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .download-btn:hover {
-            background-color: #0056b3;
-        }
-
-        .container125 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 0px 0px;
-            grid-template-areas:
-                "Photo Skill";
-        }
-
-        .Photo {
-            grid-area: Photo;
-        }
-
-        .Skill {
-            grid-area: Skill;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Mon CV - Pichot</h1>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="/SiteWebPichot/assets/Index/AP_blk.png" alt="Logo AP" class="site-logo">
+        </div>
+        <h1 class="site-title">Portfolio/CV Alexandre Pichot</h1>
     </header>
 
     <div class="container">
@@ -62,7 +28,7 @@
                 <li><a href="BUT1.html">BUT1</a></li>
                 <li><a href="BUT2.html">BUT2</a></li>
                 <li><a href="BUT3.html">BUT3</a></li>
-                <li><a href="experience.html">Expériences</a></li>
+                <li><a href="Experience.html">Expériences</a></li>
                 <li><a href="Contact.html">Contact</a></li>
 
             </ul>
@@ -72,25 +38,79 @@
 
         <section class="main-content">
 
-            <h2>About</h2>
-            <h3>Mon CV</h3>
+            <h1 class="marginabout">About</h1>
+
             <div class="container125">
                 <div class="Photo">
-                    <h3>Photo</h3>
+                    <h3 class="margintext">Photo</h3>
+                    <br>
+                    <img src="/SiteWebPichot/assets/CV/pichot.jpg" alt="Photo de moi" width=50% height=50%> <!-- 15 -->
+                </div>
+                <div class="Hard-Skill">
+                    <h3>Hard Skill</h3>
+                    <br>
+                    <h3>CAO</h3>
+                    <ul>
+                        <li>
+                            <p>Autocad</p>
+                        </li>
+                        <li>
+                            <p>Fusion360</p>
+                        </li>
+                        <li>
+                            <p>Blender</p>
+                        </li>
+                        <li>
+                            <p>Solidworks</p>
+                        </li>
+                        <li>
+                            <p>DesignSpark PCB</p>
+                        </li>
+                    </ul>
+                    <h3>Programmation</h3>
+                    <ul>
+                        <li>
+                            <p>C++</p>
+                        </li>
+                        <li>
+                            <p>Python</p>
+                        </li>
+                        <li>
+                            <p>NodeRed</p>
+                        </li>
+                    </ul>
+                    <h3>Web dev</h3>
+                    <ul>
+                        <li>
+                            <p>HTML</p>
+                        </li>
+                        <li>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <p>JS</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Soft-Skill">
+                    <h3>Soft Skill</h3>
+                    <br>
+                    <ol>
+                        <li>
+                            <p>Rigoureux</p>
+                        </li>
+                        <li>
+                            <p>Travailleur</p>
+                        </li>
+                        <li>
+                            <p>Ponctuel</p>
+                        </li>
+                    </ol>
+                </div>
 
-                </div>
-                <div class="skill">
-                    <h3>Programming</h3>
-                    <p>Python, C++</p>
-                    <h3>Web Dev</h3>
-                    <p>HTML, CSS, Php, JS</p>
-                    <h3>3D</h3>
-                    <p>Blender, Fusion360</p>
-                    <h3>2D</h3>
-                    <p>AutoCAD</p>
-                </div>
             </div>
-            
+            <br>
+
             <h1>Expériences</h1>
             <br>
             <br>
@@ -117,9 +137,22 @@
             <h4> Enseignes Casino · CDD</h4>
             <p>juin 2019 - août 2019 · 3 moisDu juin 2019 au août 2019 · 3 mois<br>
                 Le Cannet, Provence-Alpes-Côte d’Azur, France · Sur site</p> <br>
-                <br>
+            <br>
+            <h1>Education</h1>
+            <br>
+            <br>
+            <h3>BUT GEII - Parcours ESE</h3>
+            <h4>SEPT 2022- Aout 2025</h4>
+            <p>IUT Nice Côte d’Azur Electronique et Systèmes Embarqués</p> <br>
+
+            <h3>Baccalauréat général</h3>
+            <h4>2022-2018</h4>
+            <p>Lycée Jules Ferry, Cannes Option Mathématiques et Sciences de l’ingénieur</p>
+            <br>
+            <br>
             <div class="download-btn-container">
-                <a href="/assets/CV/CV_Pichot.pdf" download="CV_Pichot.pdf" class="download-btn">Télécharger mon CV</a>
+                <a href="/SiteWebPichot/assets/CV/CV_Pichot.pdf" download="CV_Pichot.pdf"
+                    class="download-btn">Télécharger mon CV</a>
             </div>
         </section>
     </div>
