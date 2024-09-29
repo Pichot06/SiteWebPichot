@@ -523,3 +523,31 @@ aside>p {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+
+/* Responsive Design */
+
+/* Pour les écrans de moins de 768px (smartphones) */
+@media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      text-align: left;
+      padding: 10px;
+  }
+
+  /* Assurer que les sections sont bien alignées */
+  main section {
+      margin-bottom: 20px;
+  }
+
+  /* Adapter les tailles des textes pour mobile */
+  h1, h2, h3 {
+      font-size: 1.5em;
+  }
+
+  p, ul {
+      font-size: 1em;
+  }
+}
