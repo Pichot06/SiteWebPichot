@@ -310,7 +310,7 @@ aside>p {
 
 
 .margintext {
-  margin-left: 120px;
+  margin-left: 70px;
 }
 
 .marginabout {
@@ -320,20 +320,18 @@ aside>p {
 
 /* BUT1 */
 .grid-container2 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
-  grid-template-areas:
-    "SAERobot SAEFlipper";
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ajuste les éléments verticalement au début */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
 }
 
-.SAEFlipper {
-  grid-area: SAEFlipper;
+.sectionFlipRobot {
+  flex: 1; /* Donne aux deux sections la possibilité de grandir équitablement */
+  margin: 20px; /* Espacement entre les sections */
+  max-width: 45%; /* Limite la largeur maximale de chaque section */
 }
 
-.SAERobot {
-  grid-area: SAERobot;
-}
 
 /* BUT2 */
 .grid-container {
@@ -584,38 +582,29 @@ aside>p {
   ul {
     font-size: 1em;
   }
-  /* Assurer que les sections sont bien alignées */
-  .main-content {
-    margin-left: 0;
-    padding: 20px;
-    text-align: left;
-    /* Aligner le texte à gauche */
+
+  .site-title {
+    font-size: 24px;
+    color: #2c983b;
+    margin: 0;
   }
-  /* nav ul {
+  .footer {
+    margin: 0;
   }
+  .margintext {
+    margin-left: 0px;
+  }
+
 
   nav ul li {
     text-align: left;
     padding: 10px;
-  }*/
+  }
 
   
   nav .fas {
     display: block;
     font-size: 25px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    background: #2c983b;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    height: 100vh;
-    width: 200px;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
   }
 
   nav ul li {
@@ -631,6 +620,14 @@ aside>p {
   }
 
 
+  /* Assurer que les sections sont bien alignées */
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+    text-align: left;
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    /* Aligner le texte à gauche */
+  }
 
   /* Adapter les tailles des textes pour mobile */
 
