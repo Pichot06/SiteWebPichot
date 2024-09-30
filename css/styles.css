@@ -584,7 +584,17 @@ aside>p {
   ul {
     font-size: 1em;
   }
+  /* Assurer que les sections sont bien alignées */
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+    text-align: left;
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
+    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
+    /* Aligner le texte à gauche */
 
+  }
   /* nav ul {
   }
 
@@ -592,11 +602,7 @@ aside>p {
     text-align: left;
     padding: 10px;
   }*/
-  .container125{
-    width: 100%; /* Utilise toute la largeur de l'écran */
-    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
-    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
-  }
+
   
   nav .fas {
     display: block;
@@ -628,14 +634,7 @@ aside>p {
     cursor: pointer;
   }
 
-  /* Assurer que les sections sont bien alignées */
-  .main-content {
-    margin-left: 0;
-    padding: 20px;
-    text-align: left;
-    /* Aligner le texte à gauche */
 
-  }
 
   /* Adapter les tailles des textes pour mobile */
 
