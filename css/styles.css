@@ -573,13 +573,6 @@ aside>p {
     padding: 10px;
   }
 
-  /* Assurer que les sections sont bien alignées */
-  main section {
-    margin-left: 0;
-    padding: 20px;
-
-  }
-
   /* Adapter les tailles des textes pour mobile */
   h1,
   h2,
@@ -604,25 +597,14 @@ aside>p {
   }
 
   /* Assurer que les sections sont bien alignées */
-  main section {
+  .main-content {
     margin-left: 0;
     padding: 20px;
 
   }
 
   /* Adapter les tailles des textes pour mobile */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 1.5em;
-  }
 
-  p,
-  ul {
-    font-size: 1em;
-  }
 
   /* Cacher la barre latérale par défaut sur les petits écrans */
   .sidebar {
