@@ -615,7 +615,6 @@ aside>p {
   }
 
   nav ul {
-    flex-direction: column;
     background: #2c983b;
     position: fixed;
     top: 0;
