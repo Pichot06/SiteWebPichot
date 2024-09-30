@@ -133,6 +133,64 @@ h4 {
   color: #fff;
 }
 
+/* responsive site */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  /* Cacher la barre latérale par défaut sur les petits écrans */
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond sombre transparent */
+    z-index: 99;
+  }
+
+  /* Afficher le bouton hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Quand le menu est actif (visible) */
+  .sidebar.active {
+    display: block;
+  }
+
+  /* Adapter les liens du menu en pleine largeur */
+  .sidebar ul li {
+    text-align: center;
+  }
+
+  .sidebar ul li a {
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  .sidebar ul li a:hover,
+  .sidebar ul li a.active {
+    background-color: #2c983b;
+  }
+}
+
 /* Contenu principal */
 .main-content {
   color: black;

@@ -22,6 +22,9 @@
 
     <div class="container">
         <!-- Menu de navigation latérale a gauche -->
+           <!-- Bouton hamburger pour les petits écrans -->
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    
         <nav class="sidebar">
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
@@ -176,7 +179,13 @@
             Terms of Use
         </div>
     </footer>
-
+    <script>
+        // Fonction pour afficher/masquer la barre latérale
+        function toggleSidebar() {
+          var sidebar = document.querySelector('.sidebar');
+          sidebar.classList.toggle('active');
+        }
+      </script>
 </body>
 
 </html>
