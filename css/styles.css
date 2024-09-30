@@ -324,6 +324,8 @@ aside>p {
   justify-content: center;
   align-items: flex-start; /* Ajuste les éléments verticalement au début */
   flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+  margin: 0 auto;
+  max-width: 1200px; /* Limite la largeur maximale du conteneur global */
 }
 
 .sectionFlipRobot {
@@ -631,6 +633,25 @@ aside>p {
 
   /* Adapter les tailles des textes pour mobile */
 
+/* but1*/
+.grid-container2 {
+  flex-direction: column; /* Les sections sont alignées en colonne sur les petits écrans */
+}
+
+.sectionFlipRobot {
+  max-width: 100%; /* Chaque section prend 100% de la largeur de l'écran */
+  margin: 10px 0; /* Réduire l'espacement sur les petits écrans */
+}
+
+iframe {
+  width: 100%; /* Les iframes s'adaptent à la largeur de l'écran */
+  height: 400px; /* Ajustement automatique de la hauteur */
+}
+
+img {
+  width: 100%; /* L'image s'adapte à la largeur de l'écran */
+  height: auto; /* Maintenir les proportions de l'image */
+}
 
   /* Cacher la barre latérale par défaut sur les petits écrans */
   .sidebar {
