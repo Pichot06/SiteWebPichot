@@ -148,6 +148,9 @@ h4 {
   left: 10px;
   z-index: 100;
 }
+.hamburger {
+  display: none; /* Masquer le bouton hamburger par défaut */
+}
 
 
 
