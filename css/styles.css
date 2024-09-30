@@ -591,23 +591,8 @@ aside>p {
   nav ul li {
     text-align: left;
     padding: 10px;
-  }*/
-  .container {
-    width: 100%; /* Utilise toute la largeur de l'écran */
-    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
-    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
-  }
+  }*:
 
-  .grid-container3{
-    width: 100%; /* Utilise toute la largeur de l'écran */
-    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
-    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
-  }
-  .container125{
-    width: 100%; /* Utilise toute la largeur de l'écran */
-    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
-    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
-  }
   
   nav .fas {
     display: block;
@@ -615,6 +600,7 @@ aside>p {
   }
 
   nav ul {
+    flex-direction: column;
     background: #2c983b;
     position: fixed;
     top: 0;
