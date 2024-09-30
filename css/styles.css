@@ -600,6 +600,7 @@ aside>p {
   .main-content {
     margin-left: 0;
     padding: 20px;
+    text-align: left; /* Aligner le texte à gauche */
 
   }
 
