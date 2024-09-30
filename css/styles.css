@@ -565,9 +565,12 @@ aside>p {
 /* Pour les écrans de moins de 768px (smartphones) */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 12px; /* Réduire légèrement la taille de la police sur les petits écrans */
-    line-height: 1.5; /* Assurer que l'espacement reste correct */
+    font-size: 12px;
+    /* Réduire légèrement la taille de la police sur les petits écrans */
+    line-height: 1.5;
+    /* Assurer que l'espacement reste correct */
   }
+
   /* Adapter les tailles des textes pour mobile */
   h1,
   h2,
@@ -582,20 +585,37 @@ aside>p {
     font-size: 1em;
   }
 
- /* nav ul {
-    flex-direction: column;
+  /* nav ul {
   }
 
   nav ul li {
     text-align: left;
     padding: 10px;
   }*/
+  .container {
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
+    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
+  }
 
-  nav .fas{
+  .grid-container3{
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
+    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
+  }
+  .container125{
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    max-width: 100%; /* Empêcher le conteneur de dépasser la taille de l'écran */
+    padding: 10px; /* Ajouter un peu d'espace à gauche et à droite */
+  }
+  
+  nav .fas {
     display: block;
     font-size: 25px;
-}    
-nav ul{
+  }
+
+  nav ul {
+    flex-direction: column;
     background: #2c983b;
     position: fixed;
     top: 0;
@@ -605,23 +625,26 @@ nav ul{
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
-}
-nav ul li{
+  }
+
+  nav ul li {
     display: block;
     margin: 25px;
-}
-nav ul .fas{
+  }
+
+  nav ul .fas {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
-}
+  }
 
   /* Assurer que les sections sont bien alignées */
   .main-content {
     margin-left: 0;
     padding: 20px;
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left;
+    /* Aligner le texte à gauche */
 
   }
 
