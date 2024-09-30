@@ -328,39 +328,15 @@ aside>p {
   max-width: 1200px; /* Limite la largeur maximale du conteneur global */
 }
 
-.sectionFlipRobot {
+.sectionSAE {
   flex: 1; /* Donne aux deux sections la possibilité de grandir équitablement */
-  margin: 20px; /* Espacement entre les sections */
+  margin: 25px; /* Espacement entre les sections */
   max-width: 45%; /* Limite la largeur maximale de chaque section */
 }
 
 
 /* BUT2 */
-.grid-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  gap: 0px 0px;
-  grid-template-areas:
-    "SAESon SAELora"
-    "SAEFour SAERoue";
-}
 
-.SAESon {
-  grid-area: SAESon;
-}
-
-.SAELora {
-  grid-area: SAELora;
-}
-
-.SAEFour {
-  grid-area: SAEFour;
-}
-
-.SAERoue {
-  grid-area: SAERoue;
-}
 
 /* BUT3 */
 /* Expérience */
@@ -626,7 +602,6 @@ aside>p {
   .main-content {
     margin-left: 0;
     padding: 20px;
-    text-align: left;
     width: 100%; /* Utilise toute la largeur de l'écran */
     /* Aligner le texte à gauche */
   }
@@ -638,7 +613,7 @@ aside>p {
   flex-direction: column; /* Les sections sont alignées en colonne sur les petits écrans */
 }
 
-.sectionFlipRobot {
+.sectionSAE {
   max-width: 100%; /* Chaque section prend 100% de la largeur de l'écran */
   margin: 10px 0; /* Réduire l'espacement sur les petits écrans */
 }
@@ -653,6 +628,12 @@ img {
   height: auto; /* Maintenir les proportions de l'image */
 }
 
+/*contact*/
+.contact-form-container {
+  margin-left: 0;
+  width: 80%;
+
+}
   /* Cacher la barre latérale par défaut sur les petits écrans */
   .sidebar {
     display: none;
