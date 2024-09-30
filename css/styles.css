@@ -187,7 +187,7 @@ h4 {
 .grid-container3 {
   display: grid;
   grid-template-columns: 33.3333% 33.3333% 33.3333%;
-  grid-template-rows: 1fr;
+  grid-template-rows: 100%;
   gap: 0px 0px;
   grid-template-areas:
     "BUT1 BUT2 BUT3";
@@ -288,8 +288,8 @@ aside>p {
 
 .container125 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  grid-template-rows: 100%;
   gap: 0px 0px;
   grid-template-areas:
     "Photo Hard-Skill Soft-Skill";
@@ -322,7 +322,7 @@ aside>p {
 .grid-container2 {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
+  grid-template-rows: 100%;
   grid-template-areas:
     "SAERobot SAEFlipper";
 }
@@ -339,7 +339,7 @@ aside>p {
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 50% 50%;
   gap: 0px 0px;
   grid-template-areas:
     "SAESon SAELora"
@@ -565,7 +565,7 @@ aside>p {
 /* Pour les écrans de moins de 768px (smartphones) */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 14px; /* Réduire légèrement la taille de la police sur les petits écrans */
+    font-size: 12px; /* Réduire légèrement la taille de la police sur les petits écrans */
     line-height: 1.5; /* Assurer que l'espacement reste correct */
   }
   /* Adapter les tailles des textes pour mobile */
