@@ -3,6 +3,7 @@ vert foncé #237c2f
 https://grid-v1.layoutit.com/
 https://developer.mozilla.org/fr/docs/Web/HTML/Element/aside
 https://developer.mozilla.org/fr/docs/Web/CSS/Comments
+https://www.codeur.com/tuto/css/menu-burger-html-css/
 */
 /* Configuration de la structure HTML5 */
 body {
@@ -598,10 +599,12 @@ aside>p {
   /* Assurer que les sections sont bien alignées */
   main section {
       margin-bottom: 20px;
+      margin-right: 100px;
+
   }
 
   /* Adapter les tailles des textes pour mobile */
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5 {
       font-size: 1.5em;
   }
 

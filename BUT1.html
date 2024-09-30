@@ -20,6 +20,8 @@
     </header>
 
     <div class="container">
+        <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
         <!-- Menu de navigation latérale -->
         <nav class="sidebar">
             <ul>
@@ -54,7 +56,7 @@
                     <iframe src="/SiteWebPichot/assets/BUT1/Rapport De Projet ROBOT_S2.pdf" width="600"
                         height="600"></iframe>
                     <img src="/SiteWebPichot/assets/BUT1/IMG_0119.JPG" alt="Image de SAE"
-                        title="Ceci est une image d'un projet SAE réalisé en BUT1. (à Cachan)" style="width:80%;" >
+                        title="Ceci est une image d'un projet SAE réalisé en BUT1. (à Cachan)" style="width:80%;">
                     <!-- 15 -->
                 </div>
             </div>
@@ -80,6 +82,13 @@
             Terms of Use
         </div>
     </footer>
+    <script>
+        // Fonction pour afficher/masquer la barre latérale
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
