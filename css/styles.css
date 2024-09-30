@@ -564,15 +564,10 @@ aside>p {
 
 /* Pour les écrans de moins de 768px (smartphones) */
 @media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
+  body {
+    font-size: 14px; /* Réduire légèrement la taille de la police sur les petits écrans */
+    line-height: 1.5; /* Assurer que l'espacement reste correct */
   }
-
-  nav ul li {
-    text-align: left;
-    padding: 10px;
-  }
-
   /* Adapter les tailles des textes pour mobile */
   h1,
   h2,
