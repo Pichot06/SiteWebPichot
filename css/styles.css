@@ -582,15 +582,40 @@ aside>p {
     font-size: 1em;
   }
 
-  nav ul {
+ /* nav ul {
     flex-direction: column;
   }
 
   nav ul li {
     text-align: left;
     padding: 10px;
-  }
+  }*/
 
+  nav .fas{
+    display: block;
+    font-size: 25px;
+}    
+nav ul{
+    background: #2c983b;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    width: 200px;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
 
   /* Assurer que les sections sont bien alignées */
   .main-content {
